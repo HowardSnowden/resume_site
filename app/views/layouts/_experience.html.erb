@@ -1,0 +1,14 @@
+<h3>Experience</h3>
+
+<% @resume.jobs.each do |j| %> 
+<h5><%= from_to(j) %> | <%= j.job_title %> |
+ <%= j.company %>: <%= j.location %> </h5>	
+<ul> 
+  	<% j.bullet_points.each do |bp| %> 
+  		<li><%= bp.content %></li>
+  	<% end %> 
+</ul>
+
+   
+
+<% end %>

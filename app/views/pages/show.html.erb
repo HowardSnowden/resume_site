@@ -1,0 +1,36 @@
+<!--
+<!doctype html>
+<html>
+<head><title>Resume</title>
+    <link rel="stylesheet" href="resume.css"></head>
+<body>
+-->
+<div id="wrapper">
+    
+    <h5 class='heading'> DAMIEN PYLES<br>
+1405 Fahlander Dr. North<br>
+Columbus, Ohio 43229 <br>
+Cell: (614) 940-9150<br>
+therealdpyles@gmail.com<br>	
+        
+</h5>
+    <h1>Resume</h1>  
+<p> <%= @resume.summary.body %> </p>
+ 
+
+<%= render "layouts/experience" %>
+
+<%= render "layouts/projects" %>
+
+<%= render "layouts/education" %>
+
+<%= render "layouts/skills" %>
+
+</div>
+
+<!--
+</body>
+    
+    
+    </html>`
+-->

@@ -1,0 +1,7 @@
+<h3> Education	</h3>   
+		 
+   <% @resume.education.each do |edu| %>
+		 <p>  <%= from_to(edu) %> | <%= edu.noteworthy_data %>
+				           | <%= edu.school %>, <%= edu.location %></p>
+
+   <% end %>

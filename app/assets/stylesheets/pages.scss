@@ -1,0 +1,42 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+    margin:0;
+    background-color:grey;
+font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+ font-size: 1.2em;
+}
+
+h1{
+    margin-right:auto;
+    margin-left:auto;
+    width:200px;
+} 
+ p{
+    font-size: 0.9em;
+ }
+
+li {
+  font-size: 0.8em;
+}
+
+#wrapper{
+    width:65%;
+    background-color:white;
+    margin-right:auto;
+    margin-left:auto;
+    padding:50px;
+}
+
+.heading{
+    width:200px;
+    position:relative;
+    top:0px;
+     margin-top:0px;
+    padding-top:0px;
+}
+
+span{
+    text-decoration:underline;
+}
