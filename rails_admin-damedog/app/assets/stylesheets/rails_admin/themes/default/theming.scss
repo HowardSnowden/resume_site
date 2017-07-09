@@ -1,0 +1,39 @@
+/*
+  Customize RailsAdmin theme here.
+
+  Look at the markup in RailsAdmin and go there to get inspiration from:
+
+  http://getbootstrap.com
+
+  Test me: (actual color should be the one defined in variables.scss if you did)
+
+  body { background-color: $link-color; }
+*/
+
+@import "bootswatch/paper/bootswatch"; // TODO: change bootswatch to not import by url
+
+// Some font-size are a little bit too big
+#block-tables h2,
+.content h4,
+.page-header h1,
+.modal-header-title {
+  font-size: 2rem;
+}
+
+// Error and dropdown were too close
+.text-danger {
+  padding-left: 5px;
+}
+
+// Title removed, so spaced a little the breadcrumb and alert divs
+.breadcrumb,
+.alert {
+  margin-top: 15px;
+}
+
+// Pagination buttons were cut
+.pagination,
+.show-all,
+.total-count {
+  margin-left: 1px;
+}
