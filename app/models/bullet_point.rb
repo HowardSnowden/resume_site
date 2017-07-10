@@ -1,6 +1,6 @@
 class BulletPoint < ApplicationRecord
  belongs_to :itemable, polymorphic: true, inverse_of: :bullet_points
 
-  default_scope { order(created_at: :desc) }
+  default_scope { order(created_at: :asc) }
 
 end
