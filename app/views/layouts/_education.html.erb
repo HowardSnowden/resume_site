@@ -2,7 +2,9 @@
 		 
    <% @resume.education.each do |edu| %>
          
-		 <p> <b><%= edu.school.html_safe %></b> <%= edu.location.html_safe %>
+		 <p> <b><%= edu.school.raw
+ %></b> <%= edu.location.raw
+ %>
 		 
 		 <small style="float: right"><%= from_to(edu)%></small>
 		 </p> 

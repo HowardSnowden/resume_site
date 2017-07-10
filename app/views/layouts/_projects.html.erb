@@ -1,7 +1,8 @@
 <h3>Projects</h3>
 
 <% @resume.projects.each do |j| %> 
-<h5> <%= j.company.html_safe %> | <small style="display: inline"> <%= j.description %></small>
+<h5> <%= j.company.raw
+ %> | <small style="display: inline"> <%= j.description %></small>
   </h5>	
 <ul> 
   	<% j.bullet_points.each do |bp| %> 
