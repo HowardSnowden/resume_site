@@ -2,7 +2,7 @@ module PagesHelper
   
   def from_to(obj)
 
-	"#{obj.from.try(:strftime, '%B, %Y') } to #{date_or_present(obj.to)} " 
+	"#{obj.from.try(:strftime, '%B, %Y') } - #{date_or_present(obj.to)}" 
   end
 
   def date_or_present(date)
