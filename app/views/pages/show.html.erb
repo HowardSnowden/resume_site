@@ -5,16 +5,22 @@
     <link rel="stylesheet" href="resume.css"></head>
 <body>
 -->
+
+<div class='container'>
 <div id="wrapper">
     
-    <h5 class='heading'> DAMIEN PYLES<br>
-1405 Fahlander Dr. North<br>
-Columbus, Ohio 43229 <br>
-Cell: (614) 940-9150<br>
-therealdpyles@gmail.com<br>	
-        
-</h5>
-    <h1>Resume</h1>  
+ <h2 class='text-center'>Damien Pyles </h2>
+ <hr>
+ <div class='info'>
+   <small>&bull;</small>
+ 	<small>Columbus, OH</small>
+    <small>614-940-9150</small>
+    <small><a href='mailto:therealdpyles@gmail.com'>therealdpyles@gmail.com</a></small>
+    <small>&bull;</small>
+ </div>
+
+<hr>
+    
 <p> <%= @resume.summary.body %> </p>
  
 
@@ -27,7 +33,7 @@ therealdpyles@gmail.com<br>
 <%= render "layouts/skills" %>
 
 </div>
-
+</div>
 <!--
 </body>
     

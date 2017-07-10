@@ -2,42 +2,84 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body{
+    
     margin:0;
-    background-color:grey;
+    background-color: grey;
+  background-size: cover;
+ 
+    
 font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
- font-size: 1.1em;
+ 
 }
 
+
+
+hr {
+    margin-top: -5px;
+}
 h1{
-    margin-right:auto;
-    margin-left:auto;
+    margin-top: 15px;
     width:200px;
-    font-size: 25px;
-    text-align: center;
+    font-size: 27px;
+   text-align: center;
 } 
+
+ 
+ .info{
+    padding: 0px;
+    width: 70%;
+    margin-top: -15px;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+ }
+ .info small {
+    display: inline;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+
+
+h2{
+    font-size: 23px;
+}
+
+h3{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+h4{
+    font-size: 17px;
+
+
+}
+
+h5{
+    font-size: 14px;
+}
+
  p{
-    font-size: 0.9em;
+    font-size: 12px;
  }
 
 li {
-  font-size: 0.8em;
+ font-size: 12px;
 }
 
 #wrapper{
+    z-index:9999;
     width:65%;
     background-color:white;
     margin-right:auto;
     margin-left:auto;
     padding:50px;
+    margin-top: 10px;
+    min-height: 700px;
 }
 
-.heading{
-    width:200px;
-    position:relative;
-    top:0px;
-     margin-top:0px;
-    padding-top:0px;
-}
+
 
 span{
     text-decoration:underline;
