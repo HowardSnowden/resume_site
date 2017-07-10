@@ -70,7 +70,7 @@ li {
 
 #wrapper{
     z-index:9999;
-    width:65%;
+
     background-color:white;
     margin-right:auto;
     margin-left:auto;
@@ -79,7 +79,17 @@ li {
     min-height: 700px;
 }
 
+@media screen and (min-width: 1000px){
+    #wrapper{
+        width: 65%;
+    }
+}
 
+@media screen and (max-width: 999px){
+    #wrapper{
+        width: 99%;
+    }
+}
 
 span{
     text-decoration:underline;
