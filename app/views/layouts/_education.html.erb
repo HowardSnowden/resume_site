@@ -1,7 +1,12 @@
 <h3> Education	</h3>   
 		 
    <% @resume.education.each do |edu| %>
-		 <p>  <%= from_to(edu) %> | <%= edu.noteworthy_data %>
-				           | <%= edu.school %>, <%= edu.location %></p>
+         
+		 <p> <b><%= edu.school.html_safe %></b> <%= edu.location.html_safe %>
+		 
+		 <small style="float: right"><%= from_to(edu)%></small>
+		 </p> 
+		 <ul style="margin-top: -10px"><li>  <%= edu.noteworthy_data %> </li></ul>
+		 
 
    <% end %>
