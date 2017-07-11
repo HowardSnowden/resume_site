@@ -1,5 +1,5 @@
-<h3>Skills</h3>  
+<h3>Skills</h3>
   <% @resume.skill_categories.each do |cat| %>
-    <p><span>Web Development Pertinent</span> | Graphic Design, Marketing, Project Management </p>
-   
+    <p><span><%=cat.category_name %></span> | <%= cat.skill_list %> </p>
+
 <%end %>
