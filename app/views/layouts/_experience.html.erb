@@ -10,6 +10,21 @@
   	<% end %> 
 </ul>
 
+<h4>Project Contributions</h4>
+
+<% j.projects.each do |p| %> 
+<p class='lead'> <%= p.company.html_safe
+ %> | <small style="display: inline"> <%= p.description %></small>
+  </h5>	
+<ul> 
+  	<% p.bullet_points.each do |pp| %> 
+  		<li><%= pp.content %></li>
+  	<% end %> 
+</ul>
+
+   
+
+<% end %>
    
 
 <% end %>
