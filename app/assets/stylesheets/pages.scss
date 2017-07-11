@@ -20,7 +20,7 @@ hr {
 h1{
     margin-top: 15px;
     width:200px;
-    font-size: 29px;
+    font-size: 28px;
    text-align: center;
 } 
 
@@ -36,36 +36,36 @@ h1{
  .info small {
     display: inline;
     padding-left: 5px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 
 
 h2{
-    font-size: 25px;
+    font-size: 24px;
 }
 
 h3{
-    font-size: 22px;
+    font-size: 21px;
     text-decoration: underline;
 }
 
 h4{
-    font-size: 19px;
+    font-size: 18px;
 
 
 }
 
 h5{
-    font-size: 16px;
+    font-size: 15px;
 }
 
  p{
-    font-size: 14px;
+    font-size: 13px;
  }
 
 li {
- font-size: 14x;
+ font-size: 13px;
 }
 
 #wrapper{
@@ -82,7 +82,7 @@ li {
 @media screen and (min-width: 1000px){
     #wrapper{
         width: 65% !important;
-        font-size: 1.2em;
+        
     }
 }
 
