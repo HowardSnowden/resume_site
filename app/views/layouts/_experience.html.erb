@@ -15,7 +15,7 @@
 <% j.projects.each do |p| %> 
 <p class='lead'> <%= p.company.html_safe
  %> | <small style="display: inline"> <%= p.description %></small>
-  </h5>	
+  </p>	
 <ul> 
   	<% p.bullet_points.each do |pp| %> 
   		<li><%= pp.content %></li>
