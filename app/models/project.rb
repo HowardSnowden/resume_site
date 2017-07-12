@@ -1,6 +1,6 @@
 class Project < ApplicationRecord
    belongs_to :job, inverse_of: :projects
-   validates_presence_of :from, :to,  :company
+   validates_presence_of   :company
    has_many :bullet_points, :as => :itemable, :inverse_of => :itemable
 
   rails_admin do
@@ -11,5 +11,6 @@ class Project < ApplicationRecord
     field :to
     field :company
     field  :description
+    field :display_order
   end
 end

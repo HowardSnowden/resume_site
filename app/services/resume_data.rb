@@ -6,7 +6,7 @@ class ResumeData
   	@jobs = Job.limit(5).order(created_at: :desc).includes(:bullet_points)
   	@summary = Summary.first || Summary.new
   	@education = Education.limit(5).order(created_at: :desc)
-  	@projects = Project.limit(10).order(created_at: :desc).includes(:bullet_points)
+  	@projects = Project.limit(10).order(display_order: :asc, created_at: :desc).includes(:bullet_points)
   	@skill_categories = SkillCategory.limit(5).order(created_at: :desc)
   end
 end
