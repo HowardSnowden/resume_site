@@ -23,7 +23,7 @@ function genPDF(e){
             onrendered: function(canvas) {
  		    
             //! MAKE YOUR PDF
-            var pdf = new jsPDF('p', 'pt', 'letter');
+            var pdf = new jsPDF('p', 'pt', 'letter', true);
           
            
             for (var i = 0; i <= resume.clientHeight/980; i++) {
@@ -47,7 +47,7 @@ function genPDF(e){
                 ctx.drawImage(srcImg,sX,sY,sWidth,sHeight,dX,dY,dWidth,dHeight);
 
                 // document.body.appendChild(canvas);
-                var canvasDataURL = onePageCanvas.toDataURL("image/png", 0.7);
+                var canvasDataURL = onePageCanvas.toDataURL("image/png", 1.0);
 
                 var width         = onePageCanvas.width;
                 var height        = onePageCanvas.clientHeight;
@@ -60,7 +60,7 @@ function genPDF(e){
                 //! now we declare that we're working on that page
                 pdf.setPage(i+1);
                 //! now we add content to that page!
-                pdf.addImage(canvasDataURL, 'PNG', 20, 40, (width*.62), (height*.62));
+                pdf.addImage(canvasDataURL, 'PNG', 20, 40, (width*.62), (height*.62), undefined, 'FAST');
 
             }
             //! after the for loop is finished running, we save the pdf.
