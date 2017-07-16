@@ -16,7 +16,7 @@ function genPDF(e){
   .children('#pdfbutton').hide();
   $('#pdf-body hr').css('border-top', '2px solid rgba(0, 0, 0, 0.8)');
   $('#pdf-body a').css({'color':'inherit', 'text-decoration':'none'} );
-  $('#pdf-body .project-wrap').css('margin-top', '15px');
+  $('#pdf-body .project-wrap').css('margin-top', '30px');
   var resume = document.getElementById('pdf-body');
 
         html2canvas(resume, {
