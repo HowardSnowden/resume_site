@@ -5,10 +5,18 @@
     <link rel="stylesheet" href="resume.css"></head>
 <body>
 -->
-
-
+<div id='background'>
+<div style="position:absolute;left:0;z-index:-9999;width:900px;background-color:white;" id='pdf-body'></div>
 <div id="wrapper">
   <div class='container'>
+ 
+ <div class="text-left" id="pdfbutton">
+<small><a   href="javascript:genPDF()"> Save PDF</a>
+<div id='loader'> <%=image_tag('ajax-loader.gif', class:'loader') %></div></small>
+
+</div>
+
+ <div id='content'>
  <h2 class='text-center'>Damien Pyles | Web Developer</h2>
  <hr>
  <div class='info'>
@@ -31,10 +39,11 @@
 <%= render "layouts/skills" %>
 </div>
 </div>
-
+</div>
+</div>
 <!--
 </body>
-    
+   
     
     </html>`
 -->
