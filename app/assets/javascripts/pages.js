@@ -25,7 +25,7 @@ function genPDF(e){
             var pdf = new jsPDF('p', 'pt', 'letter');
           
            
-            for (var i = 0; i <= resume.clientHeight/1000; i++) {
+            for (var i = 0; i <= resume.clientHeight/980; i++) {
                 //! This is all just html2canvas stuff
                 var srcImg  = canvas;
                 var sX      = 0;
@@ -39,7 +39,7 @@ function genPDF(e){
 
                 window.onePageCanvas = document.createElement("canvas");
                 onePageCanvas.setAttribute('width', 900);
-                onePageCanvas.setAttribute('height', 980);
+                onePageCanvas.setAttribute('height', 1200);
                 var ctx = onePageCanvas.getContext('2d');
                 // details on this usage of this function: 
                 // https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Using_images#Slicing
