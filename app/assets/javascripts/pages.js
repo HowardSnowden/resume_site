@@ -31,7 +31,7 @@ function genPDF(e){
                 var sX      = 0;
                 var sY      = 980*i; // start 980ixels down for every new page
                 var sWidth  = 900;
-                var sHeight = 1000;
+                var sHeight = 980;
                 var dX      = 0;
                 var dY      = 0;
                 var dWidth  = 900;
