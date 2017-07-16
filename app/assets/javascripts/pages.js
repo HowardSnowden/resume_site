@@ -47,7 +47,7 @@ function genPDF(e){
                 ctx.drawImage(srcImg,sX,sY,sWidth,sHeight,dX,dY,dWidth,dHeight);
 
                 // document.body.appendChild(canvas);
-                var canvasDataURL = onePageCanvas.toDataURL("image/png", 1.0);
+                var canvasDataURL = onePageCanvas.toDataURL("image/png", 0.7);
 
                 var width         = onePageCanvas.width;
                 var height        = onePageCanvas.clientHeight;
