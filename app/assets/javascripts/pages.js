@@ -25,11 +25,11 @@ function genPDF(e){
             var pdf = new jsPDF('p', 'pt', 'letter');
           
            
-            for (var i = 0; i <= resume.clientHeight/980; i++) {
+            for (var i = 0; i <= resume.clientHeight/1000; i++) {
                 //! This is all just html2canvas stuff
                 var srcImg  = canvas;
                 var sX      = 0;
-                var sY      = 985*i; // start 980ixels down for every new page
+                var sY      = 980*i; // start 980ixels down for every new page
                 var sWidth  = 900;
                 var sHeight = 980;
                 var dX      = 0;
