@@ -31,7 +31,7 @@ function genPDF(e){
                 var sX      = 0;
                 var sY      = 980*i; // start 980ixels down for every new page
                 var sWidth  = 900;
-                var sHeight = 980;
+                var sHeight = 1200;
                 var dX      = 0;
                 var dY      = 0;
                 var dWidth  = 900;
@@ -39,7 +39,7 @@ function genPDF(e){
 
                 window.onePageCanvas = document.createElement("canvas");
                 onePageCanvas.setAttribute('width', 900);
-                onePageCanvas.setAttribute('height', 1200);
+                onePageCanvas.setAttribute('height', 980);
                 var ctx = onePageCanvas.getContext('2d');
                 // details on this usage of this function: 
                 // https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Using_images#Slicing
