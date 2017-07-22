@@ -1,0 +1,3 @@
+class OtherJob < Job 
+
+end

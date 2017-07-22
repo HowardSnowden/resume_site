@@ -1,0 +1,17 @@
+<% if @resume.other_jobs.present? %>
+<h3>Other Experience</h3>
+
+<% @resume.other_jobs.each do |j| %> 
+<h5> <%= j.job_title %> | <%=j.company %> <small
+ style ="float: right"><%= from_to(j) %>, <%= j.location %></small>
+  </h5>	
+<ul> 
+  	<% j.bullet_points.each do |bp| %> 
+  		<li><%= bp.content %></li>
+  	<% end %> 
+</ul>
+
+
+<% end %>
+<hr>
+<% end %>
