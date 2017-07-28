@@ -17,7 +17,7 @@ function genPDF(e){
   $('#pdf-body hr').css('border-top', '2px solid rgba(0, 0, 0, 0.8)');
   $('#pdf-body a').css({'color':'inherit', 'text-decoration':'none'} );
 
-  $('#pdf-body .project-wrap').css('margin-top', '15px');
+  $('#pdf-body .project-wrap').css('margin-top', '20px');
   $('#pdf-body li').css('display', 'list-item');
   var elems_increased = [];
   $('#content').find('h1, h2, h3, h4, h5, h6, p, li, small').each(function(){
