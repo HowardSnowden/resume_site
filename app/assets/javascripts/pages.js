@@ -31,11 +31,8 @@ function genPDF(e){
     }
 
   });
-  // $('#pdf-body h1').css('font-size', '36px');
-  // $('#pdf-body h2').css('font-size', '30px');
-  // $('#pdf-body p, #pdf-body li').css('font-size', '17px');
-  // $('#pdf-body h4')
-
+  var origiHeight = $('#background').height();
+  $('#background').height($('#pdf-body').height())
   var resume = document.getElementById('pdf-body');
 
         html2canvas(resume, {
@@ -87,6 +84,7 @@ function genPDF(e){
              $('.loader').hide();
             $('#pdfbutton a').attr('href', "javascript:genPDF()").text('Save PDF');
             $('#pdf-body').css('left', '-9999px');
+            $('#background').height(origiHeight);
         }
       });
   }
