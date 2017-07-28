@@ -16,7 +16,7 @@ function genPDF(e){
   .children('#pdfbutton').hide();
   $('#pdf-body hr').css('border-top', '2px solid rgba(0, 0, 0, 0.8)');
   $('#pdf-body a').css({'color':'inherit', 'text-decoration':'none'} );
-
+  $('#pdf-body').css('left', 0);
   $('#pdf-body .project-wrap').css('margin-top', '22px');
   $('#pdf-body li').css('display', 'list-item');
   var elems_increased = [];
@@ -86,6 +86,7 @@ function genPDF(e){
            pdf.save('Damien-Pyles-Resume.pdf');
              $('.loader').hide();
             $('#pdfbutton a').attr('href', "javascript:genPDF()").text('Save PDF');
+            $('#pdf-body').css('left', '-9999px');
         }
       });
   }
