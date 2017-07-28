@@ -72,6 +72,22 @@ li {
  font-size: 13px;
 }
 
+
+#pdf-body {
+   ul {
+        li {
+            &:before {
+                position: absolute; //This way is doesn't effect sizing
+                left: 34px; //Whatever indent level you need to match the bullet placement
+                z-index: 1000; //This may not be necessary for you
+                content:'\00b7';
+                font-size: 40px;
+                margin-top: -18px;
+            }
+        }
+    }
+  }
+
 #wrapper{
   
 

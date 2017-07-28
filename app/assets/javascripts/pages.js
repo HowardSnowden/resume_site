@@ -16,7 +16,26 @@ function genPDF(e){
   .children('#pdfbutton').hide();
   $('#pdf-body hr').css('border-top', '2px solid rgba(0, 0, 0, 0.8)');
   $('#pdf-body a').css({'color':'inherit', 'text-decoration':'none'} );
+
   $('#pdf-body .project-wrap').css('margin-top', '15px');
+  $('#pdf-body li').css('display', 'list-item');
+  var elems_increased = [];
+  $('#content').find('h1, h2, h3, h4, h5, h6, p, li, small').each(function(){
+      
+      var elemType = $(this).context.localName;
+
+      if (elems_increased.indexOf(elemType) < 0){ 
+       var new_font_size = parseInt($(this).css('font-size') ) + 3;
+       $('#pdf-body '+ elemType).css('font-size', new_font_size + "px");
+        elems_increased.push($(this).context.localName);
+    }
+
+  });
+  // $('#pdf-body h1').css('font-size', '36px');
+  // $('#pdf-body h2').css('font-size', '30px');
+  // $('#pdf-body p, #pdf-body li').css('font-size', '17px');
+  // $('#pdf-body h4')
+
   var resume = document.getElementById('pdf-body');
 
         html2canvas(resume, {
