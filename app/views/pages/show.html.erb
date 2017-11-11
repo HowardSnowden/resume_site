@@ -17,13 +17,13 @@
 </div>
 
  <div id='content'>
- <h2 class='text-center'>Damien Pyles | Web Developer</h2>
+ <h2 class='text-center'> <%= Admin.full_name %> | <%=  Admin.occupation %></h2>
  <hr>
  <div class='info'>
    <small>&bull;</small>
  	<small>Columbus, OH</small>
-    <small>614-940-9150</small>
-    <small><a href=<%="mailto:#{Admin.first.try(:email)}"%>><%= Admin.first.try(:email) %></a></small>
+    <small><%= Admin.first.try(:phone_number) %> </small>
+    <small><a href=<%="mailto:#{Admin.email}"%>><%= Admin.email %></a></small>
     <small>&bull;</small>
  </div>
 
