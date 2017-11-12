@@ -1,5 +1,43 @@
+<div class='skill-references'>
+<div class='col-wrapper'>
 <h3>Skills</h3>
   <% @resume.skill_categories.each do |cat| %>
     <p class='skills'><span><%=cat.category_name %></span> | <%= cat.skill_list %> </p>
 
 <%end %>
+</div>
+
+<div class='col-wrapper'>
+  <h3>References </h3>
+  <ol>
+  <% @resume.references.each do |ref| %>
+      <li style='margin-left: -25px'> <%= ref.full_name %>, <%= ref.position %>, <%= ref.company %><p> <%= ref.phone_number %></p> </li>
+
+    
+
+   <%end %>
+</ol>
+
+</div>
+
+</div>
+
+<style>
+
+.col-wrapper{
+  width: 45%;
+  float: left;
+  margin-right: 10px;
+
+
+  
+}
+
+.skill-references {
+  margin: auto;
+  width: 100%;
+
+}
+
+</style>
+
