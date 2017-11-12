@@ -15,4 +15,5 @@
 //= require jspdf.min.js
 //= require html2canvas.js
 //= require turbolinks
+//= require pages 
 //= require_tree .
