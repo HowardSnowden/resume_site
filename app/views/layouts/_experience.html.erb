@@ -11,27 +11,21 @@
 </ul>
 
 
-<% if j.projects.any? %>. 
-<div class='contributions'>
-<h4 style="text-decoration: underline;">Project Contributions</h4>
-
-<% end %> 
-
-
-<% j.projects.each do |p| %>
-<div class='project-wrap'> 
-<h5> <%= p.company.html_safe
- %> | <small style="display: inline"> <%= p.description %></small>
-  </h5>	
-<ul> 
-  	<% p.bullet_points.each do |pp| %> 
-  		<li><%= pp.content %></li>
-  	<% end %> 
-</ul>
-</div>
-   
-
- <% end %>
- </div>
+<% if j.projects.any? %>
+    <div class='contributions'>
+    <h4 style="text-decoration: underline;">Project Contributions</h4>
+    <% j.projects.each do |p| %>
+    <div class='project-wrap'> 
+    <h5> <%= p.company.html_safe
+     %> | <small style="display: inline"> <%= p.description %></small>
+      </h5>	
+    <ul> 
+      	<% p.bullet_points.each do |pp| %> 
+      		<li><%= pp.content %></li>
+      	<% end %> 
+    </ul>
+   </div>
+  </div>
+ <% end %> 
 <% end %>
- <hr>
+<% end %> 
