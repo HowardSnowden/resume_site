@@ -1,7 +1,7 @@
 <h3>Experience</h3>
 
 <% @resume.jobs.each do |j| %> 
-<h5> <span style="{font-weight: bold; text-decoration: none}"><%=j.company %></span> | <%= j.job_title %>   
+<h5> <span style="font-weight: 600; text-decoration: none"><%=j.company %></span> | <%= j.job_title %>   
   <small style ="float: right"><%= from_to(j) %>, <%= j.location %></small>
   </h5>	
 <ul> 
