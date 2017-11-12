@@ -22,7 +22,7 @@
  <div class='info'>
    <small>&bull;</small>
  	<small>Columbus, OH</small>
-    <small><%= Admin.first.try(:phone_number) %> </small>
+    <small><a href="tel:<%= Admin.first.try(:phone_number)%>"><%= Admin.first.try(:phone_number)  %></a></small>
     <small><a href=<%="mailto:#{Admin.email}"%>><%= Admin.email %></a></small>
     <small>&bull;</small>
  </div>
@@ -37,11 +37,24 @@
 
 <%= render "layouts/education" %>
 
-<%= render "layouts/skills" %>
+
+  <%= render "layouts/skills" %>
+
+
 </div>
 </div>
 </div>
 </div>
+
+
+<style> 
+   small {
+    white-space: nowrap;
+    
+   }
+
+</style>
+
 <!--
 </body>
    
