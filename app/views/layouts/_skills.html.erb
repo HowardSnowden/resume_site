@@ -7,11 +7,11 @@
 <%end %>
 </div>
 
-<div class='col-wrapper' >
+<div class='col-wrapper' style="margin-left: 8%">
   <h3>References </h3>
   <ol>
   <% @resume.references.each do |ref| %>
-      <li style='margin-left: -25px'> <%= ref.full_name %>, <%= ref.position %>, <%= ref.company %><p> <%= ref.phone_number %></p> </li>
+      <li style='margin-left: -25px'> <span style="text-decoration: underline"><%= ref.full_name %></span>, <%= ref.position %>, <%= ref.company %> | <%= ref.phone_number %> </li>
 
     
 
@@ -29,13 +29,12 @@
   display: inline-block;
   vertical-align: top;
   max-height: 400px;
-  margin-right: 15px;
-
+  padding-top: 10px;
   
 }
 
 .skill-references {
-  margin: auto;
+  margin:auto;
   display: block;
   width: 100%;
 
