@@ -10,5 +10,6 @@ class Job < ApplicationRecord
     field :location
     field :company
     field :job_title
+    field :display_order 
   end
 end
