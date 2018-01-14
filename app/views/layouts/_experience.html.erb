@@ -10,7 +10,7 @@
   	<% end %> 
 </ul>
 
-<div class='contributions'>
+<div class='contributions' style="display: <%= j.projects.try(:empty?) ? 'none' : 'block' %>">
 <h4 style="text-decoration: underline;">Project Contributions</h4>
 
 
